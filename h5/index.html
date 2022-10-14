@@ -1,2 +1,59 @@
-<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>电子木鱼</title><script>var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
-            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')</script><link rel=stylesheet href=/static/index.b0707a6a.css></head><body><noscript><strong>Please enable JavaScript to continue.</strong></noscript><div id=app></div><script src=/static/js/chunk-vendors.94f06dd3.js></script><script src=/static/js/index.600e588e.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./assets/uni.9c3a57bc.css">
+
+	<meta charset="UTF-8" />
+	<link rel="icon" href="./static/logo.png" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate" />
+	<script>
+		var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+			CSS.supports('top: constant(a)'))
+		document.write(
+			'<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+			(coverSupport ? ', viewport-fit=cover' : '') + '" />')
+	</script>
+	<title></title>
+  <script type="module" crossorigin src="./assets/index.1a866322.js"></script>
+  <link rel="stylesheet" href="./assets/index.0cc36d35.css">
+</head>
+
+<body>
+	<div id="app">
+	</div>
+	
+	<script>
+		window.onload = function () {
+			const url = window.location.href;
+
+			if (url.indexOf(':3000') <= 0) {
+				document.onkeydown = function () {
+					if (window.event && window.event.keyCode == 123) {
+						event.keyCode = 0;
+						event.returnValue = false;
+						return false;
+					}
+				};
+				document.oncontextmenu = new Function("event.returnValue=false");
+				document.onselectstart = new Function("event.returnValue=false");
+				
+				var useragent = navigator.userAgent;
+				if (url.indexOf('eContract') <= 0 || url.indexOf('basicInfo') <= 0) {
+					if (useragent.match(/WindowsWechat/) == 'WindowsWechat' || useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+						alert('已禁止本次访问：你必须使用手机微信内置浏览器访问本站点！');
+						document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
+						document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在手机微信客户端打开链接</h4></div></div>';
+						return
+					}
+					return
+				}
+			}
+		}
+
+	</script>
+</body>
+
+</html>
