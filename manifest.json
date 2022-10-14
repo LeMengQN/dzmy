@@ -108,7 +108,8 @@
     "locale" : "auto",
     "h5" : {
         "router" : {
-            "base" : "./"
+            "base" : "./",
+            "mode" : "hash"
         },
         "devServer" : {
             "https" : true
