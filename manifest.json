@@ -105,5 +105,13 @@
         "enable" : false
     },
     "vueVersion" : "2",
-    "locale" : "auto"
+    "locale" : "auto",
+    "h5" : {
+        "router" : {
+            "base" : "./"
+        },
+        "devServer" : {
+            "https" : true
+        }
+    }
 }
